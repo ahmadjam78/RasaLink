@@ -4,7 +4,7 @@
 .rasa-container > div{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .welcome{
@@ -75,7 +75,7 @@ html, body {
     font-size: 13px;
     line-height: 1.55;
 }
-h1 {
+h1,h2 {
     padding: 20px 0 20px;
     font: 40px/60px Gabriela, Georgia, serif;
     text-align: center;
@@ -183,11 +183,6 @@ a:hover {
     -webkit-transform: rotate(0deg);
 }
 
-
-/*----------------------------------------------------------------------------*/
-/*                                 EXTENSIONS                                 */
-/*----------------------------------------------------------------------------*/
-
 /**/
 /* auto height */
 /**/
@@ -207,7 +202,6 @@ a:hover {
 .pcss3t-height-auto > .tab-content-last:checked ~ ul .tab-content-last {
     display: block;
 }
-
 
 /**/
 /* grid */
@@ -279,7 +273,6 @@ a:hover {
 .pcss3t .grid-col-offset-5:first-child {
     margin-left: 85%;
 }
-
 
 /**/
 /* typography */
@@ -411,14 +404,12 @@ a:hover {
     text-align: right;
 }
 
-
 /**/
 /* steps */
 /**/
 .pcss3t-steps > label {
     cursor: default;
 }
-
 
 /**/
 /* animation effects */
@@ -442,19 +433,12 @@ a:hover {
     left: -80px;
 }
 
-
-
-/*----------------------------------------------------------------------------*/
-/*                                   LAYOUTS                                  */
-/*----------------------------------------------------------------------------*/
-
 /**/
 /* top right */
 /**/
 .pcss3t-layout-top-right {
     text-align: right;
 }
-
 
 /**/
 /* top center */
@@ -463,19 +447,12 @@ a:hover {
     text-align: center;
 }
 
-
 /**/
 /* top combi */
 /**/
 .pcss3t > .right {
     float: right;
 }
-
-
-
-/*----------------------------------------------------------------------------*/
-/*                                    ICONS                                   */
-/*----------------------------------------------------------------------------*/
 
 /**/
 /* icons positions */
@@ -487,17 +464,12 @@ a:hover {
     text-align: center;
 }
 
-/*----------------------------------------------------------------------------*/
-/*                               RESPONSIVENESS                               */
-/*----------------------------------------------------------------------------*/
-
 /**/
 /* pad */
 /**/
 @media screen and (max-width: 980px) {
 
 }
-
 
 /**/
 /* phone */
@@ -510,12 +482,6 @@ a:hover {
         float: none;
     }
 }
-
-
-
-/*----------------------------------------------------------------------------*/
-/*                                   THEMES                                   */
-/*----------------------------------------------------------------------------*/
 
 /**/
 /* default */
@@ -539,7 +505,6 @@ a:hover {
 .pcss3t-steps > label:hover {
     background: #e5e5e5;
 }
-
 
 /**/
 /* theme 1 */
@@ -585,7 +550,6 @@ a:hover {
     }
 }
 
-
 /**/
 /* theme 2 */
 /**/
@@ -628,7 +592,6 @@ a:hover {
     }
 }
 
-
 /**/
 /* theme 3 */
 /**/
@@ -658,7 +621,6 @@ a:hover {
     border-radius: 0;
     box-shadow: none;
 }
-
 
 /**/
 /* theme 4 */
@@ -708,7 +670,6 @@ a:hover {
         margin-right: 0;
     }
 }
-
 
 /**/
 /* theme 5 */
@@ -762,11 +723,6 @@ a:hover {
     }
 }
 
-
-/*----------------------------------------------------------------------------*/
-/*                               CUSTOMIZATION                                */
-/*----------------------------------------------------------------------------*/
-
 /**/
 /* height */
 /**/
@@ -774,7 +730,6 @@ a:hover {
 .pcss3t > ul > li {
     height: 370px;
 }
-
 
 label {
     display: block;

@@ -92,11 +92,6 @@ a:hover {
     -webkit-transform: rotate(0deg);
 }
 
-
-/*----------------------------------------------------------------------------*/
-/*                                 EXTENSIONS                                 */
-/*----------------------------------------------------------------------------*/
-
 /**/
 /* auto height */
 /**/
@@ -113,7 +108,6 @@ a:hover {
 .pcss3t-height-auto > .tab-content-last:checked ~ ul .tab-content-last {
     display: block;
 }
-
 
 /**/
 /* grid */
@@ -185,7 +179,6 @@ a:hover {
 .pcss3t .grid-col-offset-5:first-child {
     margin-left: 85%;
 }
-
 
 /**/
 /* typography */
@@ -317,14 +310,12 @@ a:hover {
     text-align: right;
 }
 
-
 /**/
 /* steps */
 /**/
 .pcss3t-steps > label {
     cursor: default;
 }
-
 
 /**/
 /* animation effects */
@@ -348,19 +339,12 @@ a:hover {
     left: -80px;
 }
 
-
-
-/*----------------------------------------------------------------------------*/
-/*                                   LAYOUTS                                  */
-/*----------------------------------------------------------------------------*/
-
 /**/
 /* top right */
 /**/
 .pcss3t-layout-top-right {
     text-align: right;
 }
-
 
 /**/
 /* top center */
@@ -369,19 +353,12 @@ a:hover {
     text-align: center;
 }
 
-
 /**/
 /* top combi */
 /**/
 .pcss3t > .right {
     float: right;
 }
-
-
-
-/*----------------------------------------------------------------------------*/
-/*                                    ICONS                                   */
-/*----------------------------------------------------------------------------*/
 
 /**/
 /* icons positions */
@@ -394,18 +371,12 @@ a:hover {
     text-align: center;
 }
 
-
-/*----------------------------------------------------------------------------*/
-/*                               RESPONSIVENESS                               */
-/*----------------------------------------------------------------------------*/
-
 /**/
 /* pad */
 /**/
 @media screen and (max-width: 980px) {
 
 }
-
 
 /**/
 /* phone */
@@ -418,12 +389,6 @@ a:hover {
         float: none;
     }
 }
-
-
-
-/*----------------------------------------------------------------------------*/
-/*                                   THEMES                                   */
-/*----------------------------------------------------------------------------*/
 
 /**/
 /* default */
@@ -479,6 +444,7 @@ a:hover {
 .pcss3t-theme-1 > .tab-content-first:checked ~ ul {
     border-top-left-radius: 0;
 }
+
 @media screen and (max-width: 767px) {
     .pcss3t-theme-1 > label {
         margin-right: 0;
@@ -493,8 +459,6 @@ a:hover {
     }
 }
 
-
-/* لیبل‌ها */
 label {
     display: block;
     margin-bottom: 6px;
@@ -502,9 +466,9 @@ label {
     color: #555;
 }
 
-/* ورودی‌ها و سلکت‌ها */
 input[type="text"],
 input[type="email"],
+input[type="url"],
 input[type="password"],
 select {
     width: 100%;
@@ -525,7 +489,6 @@ select:focus {
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
 }
 
-/* دکمه */
 button,
 input[type="submit"] {
     background-color: #4a90e2;
@@ -544,7 +507,6 @@ input[type="submit"]:hover {
     background-color: #357acc;
 }
 
-/* واکنش‌گرایی */
 @media (max-width: 500px) {
     form {
         padding: 15px;
@@ -554,3 +516,24 @@ input[type="submit"]:hover {
         font-size: 14px;
     }
 }
+
+.message-link {
+    display: none;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    padding: 6px 10px;
+    border-left: 4px solid #4CAF50;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.message-link:hover {
+    background: #e8f5e9;
+    border-left-color: #388e3c;
+    color: #2e7d32;
+}
+

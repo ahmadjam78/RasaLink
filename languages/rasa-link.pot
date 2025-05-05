@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: \n"
+"Project-Id-Version: Rasa Link\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: ChatGPT\n"
+
+#: Rasa_Settings.php
+msgid "Rasa Link Settings"
+msgstr ""
+
+#: Rasa_Settings.php
+msgid "Rasa Link"
+msgstr ""
+
+#: Rasa_Settings.php
+msgid "API key saved successfully."
+msgstr ""
+
+#: Rasa_Settings.php
+msgid "API key cannot be empty."
+msgstr ""
+
+#: Rasa_Settings.php
+msgid "Channel ID: %s"
+msgstr ""
+
+#: Rasa_Settings.php
+msgid "Name cannot be empty."
+msgstr ""

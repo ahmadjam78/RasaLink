@@ -8,11 +8,11 @@ jQuery(document).ready(function($) {
                 if (response.success) {
                     alert(response.data.message || successMessage);
                 } else {
-                    alert(response.data.message || 'خطایی رخ داده است.');
+                    alert(response.data.message || rasa_messages.error_general);
                 }
             })
             .fail(function() {
-                alert('خطایی در ارتباط با سرور رخ داده است.');
+                alert(rasa_messages.error_server);
             });
     }
 
@@ -21,11 +21,11 @@ jQuery(document).ready(function($) {
         const apiKey = $('input[name="api-key"]').val().trim();
 
         if (!apiKey) {
-            alert('لطفاً کلید API را وارد کنید.');
+            alert(rasa_messages.error_empty_api_key);
             return;
         }
 
-        sendAjax('save_api_key', { api_key: apiKey }, 'کلید API با موفقیت ذخیره شد.');
+        sendAjax('save_api_key', { api_key: apiKey }, rasa_messages.success_api_key_saved);
     });
 
     $('.btn-save-channel').on('click', function(e) {
@@ -33,10 +33,10 @@ jQuery(document).ready(function($) {
         const name = $('input[name="name-channel"]').val().trim();
 
         if (!name) {
-            alert('لطفاً نام کانال را وارد کنید.');
+            alert(rasa_messages.error_empty_channel);
             return;
         }
 
-        sendAjax('save_channel', { name: name }, 'کانال با موفقیت ذخیره شد.');
+        sendAjax('save_channel', { name: name }, rasa_messages.success_channel_saved);
     });
 });

@@ -8,12 +8,14 @@ jQuery(document).ready(function($) {
             const channel = channelSelector ? $(channelSelector).val() : '';
             const $message = $(messageSelector);
 
+            $message.show();
+
             if (!link) {
-                $message.html('لطفاً لینک را وارد کنید.');
+                $message.html(rasa_messages.error_empty_link);
                 return;
             }
 
-            $message.html('در حال پردازش...');
+            $message.html(rasa_messages.processing);
 
             $.ajax({
                 type: 'POST',
@@ -27,13 +29,13 @@ jQuery(document).ready(function($) {
                 },
                 success: function(response) {
                     if (response.success) {
-                        $message.html(response.data);
+                        $message.html(rasa_messages.success_short_link + ": " + response.data);
                     } else {
-                        $message.html('خطا: ' + (response.data || 'پاسخ نامعتبر از سرور.'));
+                        $message.html(rasa_messages.error_general + ': ' + (response.data || rasa_messages.error_invalid_response));
                     }
                 },
                 error: function(xhr, status, error) {
-                    $message.html('خطایی رخ داده است: ' + error);
+                    $message.html(rasa_messages.error_server + ': ' + error);
                 }
             });
         });
